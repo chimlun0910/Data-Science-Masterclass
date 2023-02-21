@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pwskills</title>
+    <link rel="stylesheet" href="static/app.css" />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to Pwskills Course</h1>
+    <hr />
+    <div class="course_box">
+      <div class="course">Data Science Masterclass</div>
+      <div class="course">Web Development</div>
+      <div class="course">Java Sith DSA and System Design</div>
+    </div>
+    <div class="form">
+      <form action="/register" method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="course_name">Which course to enroll:</label>
+        <select name="course_name" id="course_name">
+          <option value="Data Science Masterclass">
+            Data Science Masterclass
+          </option>
+          <option value="Web Development">Web Development</option>
+          <option value="Java With DSA and System Design">
+            Java With DSA and System Design
+          </option>
+        </select>
+
+        <label for="mail_id">Enter your mail id:</label>
+        <input type="email" name="mail_id" id="mail_id" />
+
+        <label for="phone_number">Enter your phone number:</label>
+        <input type="password" name="phone_number" id="phone_number" />
+
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+  </body>
+</html>
